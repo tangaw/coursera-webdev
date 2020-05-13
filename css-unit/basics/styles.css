@@ -1,0 +1,57 @@
+body {
+  text-align: justify;
+  background-color: rgb(202, 200, 200);
+  font-size:130%;   /* 130% of the browser default font-size (16px) */
+  font-family: serif;
+}
+h1 {
+  color: rgb(1, 109, 37);
+  font-size: 2em;
+  text-align: center;
+}
+/* Styling Text */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00aa00;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Select "blue" class and "nietzsche" id */
+.blue, #nietzsche {
+  color: rgb(75, 75, 206);
+}
+/* Select p's with class "quote" */
+p.quote {
+  text-align: center;
+}
+/* Select p's that are a direct child of a section */
+/* section > p { */
+  /* font-weight: bold; */
+/* } */
+/* Select DIVs that are inside a section with class="list" */
+section.list div {
+  color: rgb(170, 38, 152)
+}
+section li {
+  list-style: none;
+}
+/* Setting pseudo-classes "link" and "visited" for links */
+a:link, a:visited {
+  text-decoration: none;
+  border: 1px dashed rgb(197, 61, 46);
+  color: black;
+  display: block;
+  width: 300px;
+  margin-bottom: 1px;
+}
+a:hover, a:active {
+  border: 1px solid rgb(197, 61, 46);
+}
+section > div:nth-child(odd) {
+  background-color: rgb(146, 146, 146);
+  text-align: center;
+  /* width: 400px; */
+}
