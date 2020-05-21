@@ -1,0 +1,6 @@
+.row {
+  margin-bottom: 15px;
+}
+.row > div {
+  border: 1px dashed #A52A2A;
+}

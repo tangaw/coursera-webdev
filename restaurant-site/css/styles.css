@@ -1,0 +1,273 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: "Oxygen", sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+}
+.navbar-brand h2 {
+  font-family: "Lora", serif;
+  color: #557c3e;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 0.75;
+}
+.navbar-brand h2:hover, .navbar-brand h2:focus {
+  text-decoration: none;
+}
+
+#nav-list a {
+  color: #951c49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background-color: #dfdfdf;
+}
+
+#phone a {
+  font-size: 1.3em;
+  text-align: right;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+}
+#phone div {
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+#my-toggler {
+  border: 1px solid #61122f;
+}
+
+/** HOME PAGE **/
+#main-content > img {
+  border: 2px solid black;
+}
+
+#map-tile, #specials-tile, #menu-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+#map-tile:hover, #specials-tile:hover, #menu-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+.category-tile span, #map-tile span, #specials-tile span, #menu-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+}
+
+#menu-tile {
+  background: url("../images/kuma.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#menu-tile span {
+  font-size: 1.6em;
+}
+
+#specials-tile {
+  background: url("../images/westfield.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#specials-tile span {
+  font-size: 1.6em;
+}
+
+#map-tile span {
+  font-size: 1.6em;
+}
+
+/** END HOME PAGE **/
+/** MENU CATEGORIES PAGE **/
+.category-tile {
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+  border-radius: 0.25rem;
+}
+.category-tile span {
+  font-size: 1.2em;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  /* Sibling selector */
+  margin-bottom: 50px;
+}
+
+/** END MENU CATEGORIES PAGE **/
+/** SINGLE CATEGORY PAGE **/
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+  background-color: #cccccc;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: 0.6em;
+}
+
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #340c1f;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+
+.menu-item-description {
+  padding-right: 30px;
+}
+
+h4.menu-item-title {
+  margin: 0 0 10px;
+}
+
+.menu-item-details {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/** END SINGLE CATEGORY PAGE **/
+/** FOOTER **/
+.card-footer {
+  margin-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.card-footer div.row {
+  margin-bottom: 35px;
+}
+
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#hours > hr, #address > hr {
+  background-color: #fff;
+}
+
+#address p {
+  color: #557c3e;
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+
+/** END FOOTER **/
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding-top: 5px;
+  }
+  .navbar-brand h2 {
+    font-size: 5vw;
+    /* 1vw = 1% of viewport width */
+  }
+
+  #nav-list i {
+    font-size: 1.5em;
+    margin-right: 0.4em;
+  }
+
+  .card-footer section {
+    text-align: center;
+  }
+  .card-footer section:nth-child(3) {
+    margin-bottom: 0;
+    /* Margin already exists on the row */
+  }
+  .card-footer section > hr {
+    width: 60%;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+
+  .menu-item-description {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  #logo-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  #nav-list i {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 992px) {
+  #logo-image {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
